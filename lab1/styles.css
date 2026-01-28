@@ -1,0 +1,17 @@
+.teamImg{
+    width: 50%;
+    height: auto;
+    border: 5px solid red;
+    object-fit: cover;
+}
+
+.teamFigure {
+    width: 100%;
+}
+
+#teamFlexBox {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+}

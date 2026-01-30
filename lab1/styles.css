@@ -1,4 +1,36 @@
-.teamImg{
+hr {
+    border: 2px;
+    border-top: 3px solid black;
+}
+
+#teamFlexBox {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#background {
+    background-color: rgba(191, 229, 244, 0.921);
+}
+
+#csumb_logo {
+
+    display: block;
+    width: 15%;
+    height: 15%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#centerForm {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.teamImg {
     width: 100%;
     height: auto;
     border: 2px solid #000000;
@@ -10,66 +42,106 @@
     padding: 10px;
 }
 
-#teamFlexBox {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#background{
-    background-color: rgba(191, 229, 244, 0.921);
-}
-
-hr {
-    border: 2px;
-    border-top: 3px solid black;
-}
-
 .pageTitle {
+    display: inline-block;
     text-align: center;
-    font-size: 48px;
+    font-size: 4em;
     color: #333333;
-    font-family: 'Arial', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    margin: 10px auto;
+    padding: 8px 15%;
+    background: rgba(117, 194, 224, 0.921);
+    border-radius: 12px;
+    border: #000000 2px solid;
+}
+
+.pageTitleDiv {
+    text-align: center;
 }
 
 .pageLinks {
     display: flex;
     justify-content: center;
+    font-weight: bold;
     gap: 16px;
-    margin-bottom: 2px;
+    padding: 8px;
+    /* margin-top: 10px;
+    margin-bottom: 2px; */
 }
 
 .pageLinks a {
     text-decoration: none;
     border: 2px solid black;
-    padding: 8px;
+    padding: 8px 12px;
+    font-size: 1.2em;
     color: black;
-    background-color: #acaaaa90;
+    background-color: #d0d0d090;
+    ;
 
 }
 
 .pageLinks a:hover {
     background-color: #88858590;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(34, 255, 0, 0.25);
+
 }
 
-#csumb_logo {
-
-    display: block;
-    width: 15%;
-    height: 15%;
-    
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.centerCaptions{
+.centerCaptions {
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
+    /* font-weight: bold;  */
+    font-size: 1.5em;
 }
 
-#centerForm{
+
+.thankYouMessage {
     text-align: center;
-    margin: 0 auto;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.disclaimer {
+    font-size: 1.15em;
+    color: orange;
+    /* This is the way you add stroke with text but it is only supported in Chrome, Edge, Safari, but not FireFox */
+    -webkit-text-stroke: 0.25px black;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.programTableDiv {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.programTable{
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+
+.programTable th, .programTable td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 35px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.hWithoutPadding{
+    margin-bottom: 8px;
+}
+
+.ulWithoutPadding{
+    margin-top: 0px;
+}
+
+.commonHobbiesDiv{
+    font-size: 1.25em;
 }

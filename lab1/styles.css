@@ -1,6 +1,7 @@
 hr {
     border: 2px;
     border-top: 3px solid black;
+    margin: 0px;
 }
 
 #teamFlexBox {
@@ -12,6 +13,8 @@ hr {
 
 #background {
     background-color: rgba(191, 229, 244, 0.921);
+    margin: 0;
+    padding: 0;
 }
 
 #csumb_logo {
@@ -22,6 +25,7 @@ hr {
 
     margin-left: auto;
     margin-right: auto;
+
 }
 
 #centerForm {
@@ -29,17 +33,24 @@ hr {
     margin: 0 auto;
 }
 
+#footer {
+    background-color: rgba(117, 194, 224, 0.921);
+    padding: 5px;
+}
 
 .teamImg {
     width: 100%;
-    height: auto;
+    height: 400px;
     border: 2px solid #000000;
     object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
 }
 
 .teamFigure {
     width: 100%;
     padding: 10px;
+    overflow: hidden;
 }
 
 .pageTitle {
@@ -49,14 +60,19 @@ hr {
     color: #333333;
     font-family: Arial, sans-serif;
     margin: 10px auto;
-    padding: 8px 15%;
-    background: rgba(117, 194, 224, 0.921);
-    border-radius: 12px;
-    border: #000000 2px solid;
+    background: none;
 }
 
 .pageTitleDiv {
+    background: rgba(117, 194, 224, 0.921);
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
+}
+
+.activePage {
+    margin: 8px;
+    transform: translateY(-2px) scale(1.2);
 }
 
 .pageLinks {
@@ -65,8 +81,8 @@ hr {
     font-weight: bold;
     gap: 16px;
     padding: 8px;
-    /* margin-top: 10px;
-    margin-bottom: 2px; */
+    margin-top: 20px;
+    margin-bottom: 2px;
 }
 
 .pageLinks a {
@@ -76,8 +92,6 @@ hr {
     font-size: 1.2em;
     color: black;
     background-color: #d0d0d090;
-    ;
-
 }
 
 .pageLinks a:hover {
@@ -91,7 +105,7 @@ hr {
     font-family: 'Brush Script MT', cursive;
     text-align: center;
     /* font-weight: bold;  */
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 
@@ -103,9 +117,11 @@ hr {
 
 .disclaimer {
     font-size: 1.15em;
-    color: orange;
+    color: red;
     /* This is the way you add stroke with text but it is only supported in Chrome, Edge, Safari, but not FireFox */
     -webkit-text-stroke: 0.25px black;
+    margin-left: 10px;
+    background: none;
 }
 
 .italic {
@@ -118,14 +134,15 @@ hr {
     padding: 40px;
 }
 
-.programTable{
+.programTable {
     font-size: 1.5em;
     border: 2px solid black;
     border-collapse: collapse;
     background-color: aliceblue;
 }
 
-.programTable th, .programTable td {
+.programTable th,
+.programTable td {
     text-align: center;
     border: 1px solid black;
     padding: 20px 35px;
@@ -134,14 +151,16 @@ hr {
     overflow-wrap: break-word;
 }
 
-.hWithoutPadding{
+.hWithoutPadding {
+    margin-left: 10px;
     margin-bottom: 8px;
 }
 
-.ulWithoutPadding{
+.ulWithoutPadding {
+    margin-left: 10px;
     margin-top: 0px;
 }
 
-.commonHobbiesDiv{
+.commonHobbiesDiv {
     font-size: 1.25em;
 }

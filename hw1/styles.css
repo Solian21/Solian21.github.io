@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#titleDiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+
+    border: 2px solid black;
+    background-color: rgb(252, 132, 132);
+    margin: 0;
+    padding: 0;
+}
+
+#titleText {
+    color: black;
+    text-align: left;
+    font-size: 4.75em;
+    margin-left: 8px;
+}
+
+#backGroundColor {
+    background-color: pink;
+}
+
+.linkDiv {
+    margin-left: auto;
+    margin-right: 12px;
+    display: flex;   
+    gap: 12px;
+}
+
+.linkDiv a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.linkDiv a:hover {
+    transform: scale(1.16);
+}
+
+
+.overViewDiv {
+    display: block;
+    margin: 24px;
+    
+}
+
+.overViewHeader {
+    text-align: left;
+    margin: 8px;
+    font-size: 3em;
+    margin: 0 0 12px 0;
+
+}
+
+.textImgAlignment {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.textImgAlignment p {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.pText{
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+.pText h2 {
+    text-align: center;
+}
+
+.pText,
+.imgClass {
+    /* NEW CSS */
+    flex: 1;
+}
+
+.imgClass img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 5%;
+    object-fit: cover;
+}

@@ -31,8 +31,10 @@ body {
     border: 2px solid black;
     background-color: rgb(252, 132, 132);
     text-align: center;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
+    width: 100%;
+
 }
 
 #footCSS img {
@@ -40,6 +42,11 @@ body {
     width: 15%;
     margin: 0;
     padding: 0;
+}
+
+#activeLink {
+    transform: scale(1.05);
+    font-weight: bold;
 }
 
 .linkDiv {
@@ -160,4 +167,17 @@ body {
     width: 300px;
     height: 200px;
     object-fit: cover;
+}
+
+.videoDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 24px;
+}
+
+.videoDiv video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
 }

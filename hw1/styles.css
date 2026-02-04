@@ -27,10 +27,25 @@ body {
     background-color: pink;
 }
 
+#footCSS {
+    border: 2px solid black;
+    background-color: rgb(252, 132, 132);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#footCSS img {
+    height: auto;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+}
+
 .linkDiv {
     margin-left: auto;
     margin-right: 12px;
-    display: flex;   
+    display: flex;
     gap: 12px;
 }
 
@@ -50,7 +65,7 @@ body {
     transform: scale(1.16);
     gap: 4px;
 }
- 
+
 .linkText {
     border: 2px solid black;
     background-color: #FFACAC;
@@ -59,10 +74,10 @@ body {
 .linkText:hover {
     background-color: #FFD2D2;
 }
+
 .overViewDiv {
     display: block;
     margin: 24px;
-    
 }
 
 .overViewHeader {
@@ -84,10 +99,11 @@ body {
     text-align: center;
 }
 
-.pText{
+.pText {
     font-size: 1.5em;
     margin-top: 0px;
 }
+
 .pText h2 {
     text-align: center;
 }
@@ -107,6 +123,41 @@ body {
 }
 
 /* General Flex Box */
-.flexBox{
-    display: flex;;
+.bannerBox {
+    display: flex;
+    gap: 12px;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.bannerText {
+    text-align: center;
+    font-size: 2em;
+}
+
+.bannerImgDiv {
+    align-items: center;
+    text-align: center;
+    background-color: #FFACAC;
+    height: auto;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 16px;
+}
+
+.bannerImgLinks {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.bannerImgLinks:hover {
+    transform: translateY(-5px);
+}
+
+.bannerImgDiv img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }

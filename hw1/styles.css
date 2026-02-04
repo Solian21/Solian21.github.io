@@ -40,11 +40,25 @@ body {
     font-size: 1.5em;
 }
 
-.linkDiv a:hover {
-    transform: scale(1.16);
+/* NEW CSS Property */
+.linkDiv:has(a:hover) {
+    gap: 25px;
+    padding-right: 10px;
 }
 
+.linkDiv a:hover {
+    transform: scale(1.16);
+    gap: 4px;
+}
+ 
+.linkText {
+    border: 2px solid black;
+    background-color: #FFACAC;
+}
 
+.linkText:hover {
+    background-color: #FFD2D2;
+}
 .overViewDiv {
     display: block;
     margin: 24px;
@@ -90,4 +104,9 @@ body {
     border: 3px solid black;
     border-radius: 5%;
     object-fit: cover;
+}
+
+/* General Flex Box */
+.flexBox{
+    display: flex;;
 }

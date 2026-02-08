@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    /* NEW 100vh stands for the view of the window will be 100% of the viwed window I used it to push my footer to the bottom of every page */
+    height: 100vh;
     margin: 0px;
     padding: 0px;
 }
@@ -31,9 +35,9 @@ body {
     border: 2px solid black;
     background-color: rgb(252, 132, 132);
     text-align: center;
-    margin: 0 0 0 0;
-    padding: 0;
+    margin-top: auto;
     width: 100%;
+    padding: 0;
 
 }
 
@@ -167,17 +171,67 @@ body {
     width: 300px;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .videoDiv {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     margin: 24px;
 }
 
 .videoDiv video {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     border-radius: 5%;
+    margin-left: 32px;
+}
+
+.videoDiv img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-left: 32px;
+}
+
+.videoDivParText {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFACAC;
+    font-size: 1.5em;
+
+    border-radius: 10px;
+    border: 2px solid black;
+
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.videoDivParTexDIV {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.openButton {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    /* NEW CSS 
+    Makes cursor turn into a hand*/
+    cursor: pointer;
+
 }

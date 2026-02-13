@@ -1,0 +1,31 @@
+body { 
+    background-color: pink;
+    background-image: url("../images/gameshow.jpg");
+    background-position: center;
+}
+
+#guess { 
+    text-align: center;
+    margin: auto;
+    color: grey;
+}
+
+#guessButton:hover { 
+    transform: scale(1.05);
+    color: grey;
+}
+
+#guessInput { 
+    color: blue;
+    text-align: center;
+    text-color: blue;
+}
+
+#result { 
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-size: 2em;
+    font-family: 'Lucida Sans';
+    background-color: white;
+}

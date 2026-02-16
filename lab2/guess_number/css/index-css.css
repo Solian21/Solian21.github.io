@@ -1,0 +1,105 @@
+/* TODO: Add in 20 properties */
+body {
+    /* #1 */
+    display: flex;
+    /* #2 */
+    justify-content: center;
+    /* #3 */
+    align-items: center;
+    /* #5 */
+    height: 100vh;
+    /* #6 */
+    background-color: aqua;
+    background-image: url(../img/background.jpg);
+}
+
+#header h1 {
+    /* #7 */
+    font-size: 5em;
+    /* #8 */
+    text-align: center;
+}
+
+#header h2 {
+    /* #9 */
+    font-size: 3em;
+    /* #10 */
+    text-align: center;
+}
+
+#main {
+    /* #11 */
+    text-align: center;
+    /* #12 */
+    font-size: 2em;
+}
+
+#playerGuess {
+    /* #13 */
+    width: 400px;
+    /* #14 */
+    height: 100px;
+    /* #15 */
+    text-align: center;
+    /* #16 */
+    font-size: 2em;
+}
+
+
+#input {
+    /* #17 */
+    display: flex;
+    /* #18 */
+    justify-content: center;
+    /* #19 */
+    align-items: center;
+    /* #20 */
+    gap: 10px;
+    /* #21 */
+    padding: 10px;
+}
+
+#guessBtn {
+    /* #22 */
+    text-align: center;
+    /* #23 */
+    width: 125px;
+    /* #24 */
+    height: 50px;
+    /* #25 */
+    font-size: 1em;
+}
+
+#preGuess {
+    text-align: center;
+    font-size: 3em;
+}
+
+#guesses {
+    overflow-wrap: break-word;
+}
+
+#resetBtn {
+    text-align: center;
+    font-size: 1em;
+    width: 125px;
+    height: 50px;
+}
+
+#attempts {
+    background-color: rgb(173, 216, 230, 0.75);
+    text-align: center;
+    font-size: 3em;
+    margin: 10px auto;
+    width: 50%;
+}
+
+#scoreBoard {
+    text-align: center;
+    font-size: 2em;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}

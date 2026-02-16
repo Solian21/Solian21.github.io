@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Guess a Number </title>
-        <meta charset="utf-8">
-    </head>
-    <body>
 
-        <header>
+<head>
+    <title> Guess a Number </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index-css.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id ="scoreBoard"></div>
+
+        <header id="header">
             <h1>Guess the Number!</h1>
             <h2>Guess a number between 1 and 99 in seven attempts!</h2>
         </header>
+
         <br>
+
         <div id="main">
-          Enter a guess: 
-          <input type="text" id="playerGuess" size="5">         
-          <button id="guessBtn"> Guess </button> <br>
-          <button id="resetBtn"> Reset </button>
-          <div id="feedback"></div>
+            Enter a guess:
+            <div id="input">
+                <input type="text" id="playerGuess" size="5">
+                <button id="guessBtn"> Guess </button>
+            </div>
+        
+            <button id="resetBtn"> Reset </button>
+            <div id="feedback"></div>
         </div>
-        <div>Previous Guesses:
+
+        <div id="attempts"></div>
+
+        <div id="preGuess">
+            Previous Guesses:
             <span id="guesses"></span>
         </div>
-        <script src="js/scripts.js"></script>
-    </body>
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

@@ -8,6 +8,8 @@
 
 # [lab3 - JS Quiz](http://solian21.github.io/lab3)
 
+# [lab4 - Web API](http://solian21.github.io/lab4)
+
 # [Solian21.github.io/hw1](https://solian21.github.io/hw1)
 
 # [Solian21.github.io/hw2](https://solian21.github.io/hw2)

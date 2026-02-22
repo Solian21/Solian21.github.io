@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFA070;
+
+}
+
+header {
+    position: sticky;
+    text-align: center;
+    background-color: #FF5600;
+    padding:10px;
+    width: 100%;
+    font-size: 5em;
+    margin-bottom: 30px;
+    
+}
+
+#slot_machine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    width: 700px;
+    height: 250px;
+}
+#slot_machine .reel{
+    border: 1px solid black;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#rolling-btn {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: #D94900;
+}
+
+#slot_with_btn {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#reel-1-img {
+    width: 200px;
+    height: 200px;
+}
+#reel-2-img {
+    width: 200px;
+    height: 200px;
+}
+
+#reel-3-img {
+    width: 200px;
+    height: 200px;
+}
+
+#btn-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    transform: scale(1.5);
+}
+
+#bank-div {
+    width: 200px;
+    height: 200px;
+    border: solid black;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 3.5em;
+}
+
+#gameover {
+    margin-top: 25px;
+}
+#resetGame {
+    margin: 10px;
+    transform: scale(2);
+}

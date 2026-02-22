@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Style Sheet -->
+    <link rel="stylesheet" href="styles/index-style.css">
+    <!-- Linking JS -->
+    <script src="./scripts/index-script.js" defer></script>
+    <title>HW2 - Slot Machine</title>
+</head>
+
+<body>
+    <header>CST336: Slot Machine</header>
+
+    <div id="slot_with_btn">
+        <div id="slot_machine">
+            <div class="reel"><img id="reel-1-img" src="img/5.png"></div>
+            <div class="reel"><img id="reel-2-img" src="img/5.png"></div>
+            <div class="reel"><img id="reel-3-img" src="img/5.png"></div>
+        </div>
+
+        <div id="btn-num">
+            <button id="rolling-btn">Roll</button>
+            <div>
+                Bet: <input type="number" id="bet" min="1" value="1">
+            </div>
+        </div>
+    </div>
+
+    <div id="bank-div">
+        <span id="balance"></span></div>
+    <span id="gameover"></span>
+    <button id="resetGame">Reset</button>
+
+</body>
+
+</html>

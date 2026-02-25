@@ -1,5 +1,42 @@
+
+#password-div,
+#username-div {
+  position: relative;
+  display: inline-block;
+  opacity: 75%;
+}
+
 #username-valid {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  background-color: rgba(168, 168, 168, 0.25);
+  left: 5%;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2px;
+  margin: 5px;
+  border: 2px solid rgba(168, 168, 168, 0.5);
+  border-radius: 5px;
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+
+}
+#password-suggestion {
+  position: relative;
+  background-color: rgba(168, 168, 168, 0.25);
+  left: 5%;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2px;
+  margin: 5px;
+  border: 2px solid rgba(168, 168, 168, 0.5);
+  border-radius: 5px;
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}
+
+
+#password-suggestion.show,
+#username-valid.show {
+  opacity: 1;
+  transform: translateY(0);
 }

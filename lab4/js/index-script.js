@@ -1,10 +1,4 @@
 
-async function pageLoad() {
-}
-
-pageLoad();
-
-
 //updating on type
 let zipCode_input = document.querySelector("#zipCode-input");
 document.addEventListener("input", async function () {
@@ -53,7 +47,7 @@ document.querySelector("#password-input").addEventListener("click", async functi
         }
         const data = await response.json();
         console.log(data);
-
+        document.querySelector("#password-suggestion").classList.add("show");
         document.querySelector("#password-suggestion").textContent = `Suggested Password: ${data.password}`;
     
 
@@ -67,15 +61,15 @@ document.querySelector("#password-input").addEventListener("click", async functi
 });
 
 let username = document.querySelector("#username-input");
-console.log(username);
+console.log(username.value);
 document.querySelector("#username-input").addEventListener("input", async function() {
     let username_val = username.value;
     let username_length = username_val.length;
-    if (username_length < 6) {
-        document.querySelector("#err-msg").textContent = "Error passowrd needs to be more then 8 characters"
-        document.querySelector("#err-msg").style.color = "red"
-    } else {
-        document.querySelector("#err-msg").style.display = "none";
+    document.querySelector("#username-valid").classList.add("show");
+    if (username_length < 3) {
+        document.querySelector("#username-valid").textContent = "Username needs to be at least 3 characters";
+        document.querySelector("#username-valid").style.color = "red";
+        return;
     }
     
     let url = `https://csumb.space/api/usernamesAPI.php?username=${username.value}`;
@@ -87,9 +81,18 @@ document.querySelector("#username-input").addEventListener("input", async functi
         console.log(username)
         const data = await response.json();
         console.log(data);
-    
-        document.querySelector("#username-valid").textContent = `Valid user-name:  ${data.available}`
-        console.log(data.available)
+        
+        const isAvailable = data.available
+        console.log(isAvailable)
+        let msg = document.querySelector("#username-valid");
+        if(isAvailable) {
+            msg.textContent = `This is a valid username!`;
+            msg.style.color = 'green';
+        }
+        if(!isAvailable) {
+            msg.textContent = `This username has already been taken.`;
+            msg.style.color = 'red';            
+        }
         
 
     } catch (err) {

@@ -11,6 +11,7 @@ body {
   border-bottom: 2px solid black;
   text-align: center;
   color: white;
+  font-size: 1.75em;
 }
 #zipCode-div,
 #password-div,
@@ -21,42 +22,41 @@ body {
 
 #username-valid {
   position: relative;
-  background-color: rgba(168, 168, 168, 0.25);
-  left: 5%;
+  background-color: rgb(168, 168, 168);
   opacity: 0;
   pointer-events: none;
   padding: 2px;
-  margin: 5px;
-  border: 2px solid rgba(168, 168, 168, 0.5);
-  border-radius: 5px;
+  margin-left: 5px;
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 10px;
   transform: translateY(-5px);
   transition: 0.2s ease;
 
 }
 #password-suggestion {
   position: relative;
-  background-color: rgba(168, 168, 168, 0.25);
-  left: 5%;
+  background-color: rgb(168, 168, 168);
+  
   opacity: 0;
   pointer-events: none;
   padding: 2px;
-  margin-left: 50px;
-  border: 2px solid rgba(168, 168, 168, 0.5);
+  margin-left: 15px;
+  border: 2px solid rgb(175, 175, 175);
   border-radius: 5px;
   transform: translateY(-5px);
   transition: 0.2s ease;
 }
 #zipCode-suggestion {
   position: relative;
-  background-color: rgba(168, 168, 168, 0.25);
-  left: 5%;
+  background-color: rgb(168, 168, 168);
+  
   opacity: 0;
   pointer-events: none;
   padding: 0;
   margin-left: 15px;
-  border: 2px solid rgba(168, 168, 168, 0.5);
+  border: 2px solid rgb(175, 175, 175);
   border-radius: 5px;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   transition: 0.2s ease;
 }
 
@@ -70,4 +70,183 @@ body {
 
 #username-input {
   background-color: white;
+}
+
+#fieldSet {
+  background-color: #006868;
+  font-size: 3em;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+}
+
+#firstname-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#firstname-div input {
+  font-size: 0.5em;
+
+}
+
+#lastName-div { 
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+#lastName-div input {
+  font-size: 0.5em;
+}
+
+#email-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#email-div input {
+  font-size: 0.5em;
+}
+
+#phone-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+#phone-div input {
+  font-size: 0.5em;
+}
+
+#zipCode-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#zipCode-div input {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#city-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#city-div span {
+  font-size: 1em;
+}
+
+
+#latitude-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#latitude-div span {
+  font-size: 1em;
+}
+
+#longitude-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#longitude-div span {
+  font-size: 1em;
+}
+
+#state-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#state-div select {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#county-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#county-div select {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#username-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#username-div input {
+  font-size: 0.5em;
+}
+
+#password-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#password-div input {
+  font-size: 0.5em;
+}
+
+#repassword-div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 10px ;
+  margin: 10px;
+}
+
+#repassword-div input {
+  font-size: 0.5em;
+}
+
+#submit-btn {
+  font-size: 1em;
+  border-radius: 5%;
+  margin: 10px;
+  background-color: #33A0A0;
+}
+
+#submit-btn:hover {
+  background-color: #299696;
+  cursor: pointer;
 }

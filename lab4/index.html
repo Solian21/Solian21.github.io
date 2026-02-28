@@ -11,42 +11,55 @@
 
 <body>
     <div id="header">
-        <h1> Sign Up Form </h1>
+        <h1> CST336: Sign Up Form </h1>
     </div>
 
-    <fieldset>
+    <fieldset id="fieldSet">
         <legend>Sign Up</legend>
-        <strong>First Name: </strong><input type="text"><br>
-        <strong>Last Name: </strong><input type="text"><br>
-        <strong>Email: </strong><input type="text"><br>
-        <strong>Phone Number: </strong><input type="text">
-        <br>
+        <div id="firstname-div">
+            <strong>First Name: </strong><input type="text">
+        </div>
+        <div id="lastName-div">
+            <strong>Last Name: </strong><input type="text">
+        </div>
+        <div id="email-div">
+            <strong>Email: </strong><input type="text">
+        </div>
+        <div id="phone-div">
+            <strong>Phone Number: </strong><input type="text">
+        </div>
         <div id="zipCode-div">
             <strong>Zip Code: </strong> <input id="zipCode-input" type="text"> <span id="zipCode-suggestion"></span>
         </div>
-        <br>
-        <strong>City: </strong><span id="city-display"></span>
-        <br>
-        <strong>Latitude: </strong></strong><span id="latitude-display"></span>
-        <br>
-        <strong>Longitude: </strong><span id="longitude-display"></span>
-        <br>
-        <strong>State: </strong><select id="state-list"></select>
-        <br>
-        <strong>Select a County: </strong><select id="county-list"></select><br>
+        <div id="city-div">
+            <strong>City: </strong><span id="city-display"></span>
+        </div>
+        <div id="latitude-div">
+            <strong>Latitude: </strong></strong><span id="latitude-display"></span>
+        </div>
+        <div id="longitude-div">
+            <strong>Longitude: </strong><span id="longitude-display"></span>
+        </div>
+        <div id="state-div">
+            <strong>State: </strong><select id="state-list"></select>
+        </div>
+        <div id="county-div">
+            <strong>Select a County: </strong><select id="county-list"></select>
+        </div>
 
         <div id="username-div">
             <strong>Desired Username: </strong><input id="username-input" type="text">
             <span id="username-valid"></span>
         </div>
-        <br>
+        
         <div id="password-div">
             <strong>Password: </strong><input id="password-input" type="password">
             <span id="password-suggestion"></span>
         </div>
-        <br>
-        <strong>Retype Password: </strong><input type="password"><br>
-        <input type="submit" value="Sign up!">
+        <div id="repassword-div">
+            <strong>Retype Password: </strong><input type="password">
+        </div>
+        <input id="submit-btn" type="submit" value="Sign up!">
         <span id="err-msg"></span>
     </fieldset>
 

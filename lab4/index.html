@@ -10,35 +10,42 @@
 </head>
 
 <body>
-    <h1> Sign Up Form </h1>
+    <div id="header">
+        <h1> Sign Up Form </h1>
+    </div>
 
     <fieldset>
         <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="text"><br>
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input id="zipCode-input" type="text"><br>
-        City: <span id="city-display"></span>
+        <strong>First Name: </strong><input type="text"><br>
+        <strong>Last Name: </strong><input type="text"><br>
+        <strong>Email: </strong><input type="text"><br>
+        <strong>Phone Number: </strong><input type="text">
         <br>
-        Latitude: <span id="latitude-display"></span>
+        <div id="zipCode-div">
+            <strong>Zip Code: </strong> <input id="zipCode-input" type="text"> <span id="zipCode-suggestion"></span>
+        </div>
         <br>
-        Longitude: <span id="longitude-display"></span>
-        <br><br>
-        State: <select></select><br>
-        Select a County: <select></select><br>
+        <strong>City: </strong><span id="city-display"></span>
+        <br>
+        <strong>Latitude: </strong></strong><span id="latitude-display"></span>
+        <br>
+        <strong>Longitude: </strong><span id="longitude-display"></span>
+        <br>
+        <strong>State: </strong><select id="state-list"></select>
+        <br>
+        <strong>Select a County: </strong><select id="county-list"></select><br>
 
         <div id="username-div">
-            Desired Username: <input id="username-input" type="text">
+            <strong>Desired Username: </strong><input id="username-input" type="text">
             <span id="username-valid"></span>
         </div>
-        <br><br>
+        <br>
         <div id="password-div">
-            Password: <input id="password-input" type="password">
+            <strong>Password: </strong><input id="password-input" type="password">
             <span id="password-suggestion"></span>
-        </div>  
-        <br> <br>
-        Type Password Again: <input type="password"><br>
+        </div>
+        <br>
+        <strong>Retype Password: </strong><input type="password"><br>
         <input type="submit" value="Sign up!">
         <span id="err-msg"></span>
     </fieldset>

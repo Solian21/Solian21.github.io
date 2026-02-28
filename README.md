@@ -8,8 +8,12 @@
 
 # [lab3 - JS Quiz](http://solian21.github.io/lab3)
 
-# [lab4 - Web API](http://solian21.github.io/lab4)
+# [Lab 4: Sign up page](http://solian21.github.io/lab4)
 
-# [Solian21.github.io/hw1](https://solian21.github.io/hw1)
+# [Lab 5: (Place Holder)](https://solian21.github.io)
 
-# [Solian21.github.io/hw2](https://solian21.github.io/hw2)
+# [Hw1 - Carlos Solian](https://solian21.github.io/hw1)
+
+# [Hw2 - Carlos Solian](https://solian21.github.io/hw2)
+
+# [Hw3 - Carlos Solian (Place Holder)](https://solian21.github.io)
